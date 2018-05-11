@@ -1,12 +1,12 @@
 {
-  "name": "Mickey",
+  "name": "oookawesome",
   "version": "0.0.1",
-  "description": "A minimal one-column, responsive theme for Jekyll",
-  "homepage": "http://vincentchan.github.io/mickey",
-  "author": "Vincent Chan",
+  "description": "This is oookawesome's blog",
+  "homepage": "http://oookawesome.github.io",
+  "author": "oookawesome",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vincentchan"
+    "url": "https://github.com/oookawesome/oookawesome.github.io"
   },
   "devDependencies": {
     "browser-sync": "~2.9.7",
