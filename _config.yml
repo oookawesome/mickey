@@ -10,7 +10,7 @@ permalink:           /:title
 timezone:            Asia/Seoul # eg. Asia/Kathmandu
 locale:              your locale language # eg. en_us
 name:				 oookawesome
-title:               oookawesome | Blog
+title:               | Blog
 tagline:             'tagline'
 description:         'developer'
 url:                 https://oookawesome.github.io
