@@ -10,7 +10,7 @@ permalink:           /:title
 timezone:            Asia/Seoul # eg. Asia/Kathmandu
 locale:              your locale language # eg. en_us
 name:				 oookawesome
-title:               | Blog
+title:               Blog
 tagline:             'tagline'
 description:         'developer'
 url:                 https://oookawesome.github.io
@@ -21,11 +21,11 @@ baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
 baseurl_javascripts: '/assets/javascripts/'
 icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
-disqus:              disqus_shortname # get it on https://disqus.com/admin/
+disqus:              oookawesome # get it on https://disqus.com/admin/
 
 author:
   name:           	 oookawesome
-  url:            	 your site url
+  url:            	 https://oookawesome.github.io
   facebook:          username
   twitter:           username
   google_plus:       username
@@ -49,3 +49,4 @@ defaults:
       type: "posts"
     values:
       layout: "default"
+      comments: "true"
