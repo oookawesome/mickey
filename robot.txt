@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oookawesome.github.io/sitemap.xml
