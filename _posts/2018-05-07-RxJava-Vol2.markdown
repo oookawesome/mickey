@@ -3,7 +3,7 @@ layout: post
 title: RxJava를 활용한 리액티브 프로그래밍 정리 Vol.2
 date: 2018-05-07 17:30:00 +0300
 description: RxJava를 활용한 리액티브 프로그래밍 Vol.2 # Add post description (optional)
-image : 
+image :
     feature: rxjava.jpg
     topPosition: -50px
 categories: RxJava, Reactive Programming
@@ -16,7 +16,7 @@ syntaxHighlighter: no
 #### filter
 filter는 정확히 동일한 연산자를 반환함.  
 
-![filter](../assets/images/rx-diagram/rx-filter.png)
+![filter](../assets/images/rx-diagram/rx-filter.png){: width="70%" height="70%"}
 ```
 Observable<String> strings = ....
 Observable<String> filtered = strings.filter(s -> s.startsWith("#"));
