@@ -12,7 +12,7 @@ bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
 ---
-## 3장 연산자와 변환
+### 3장 연산자와 변환
 #### filter
 filter는 정확히 동일한 연산자를 반환함.  
 

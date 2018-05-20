@@ -388,7 +388,8 @@ table {
 
 td,
 th {
-  padding: 0;
+  border: 1px solid;
+  padding: 10px;
   line-height: 33px;
 }
 

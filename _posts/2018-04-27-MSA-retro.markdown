@@ -3,11 +3,11 @@ layout: post
 title: MSA Retro
 date: 2018-04-27 10:10:00 +0300
 description: MSA프로젝트 개발자 회고 내용 정리 # Add post description (optional)
-image: 
+image:
     feature: microservice.png
     topPosition: -50px
 categories: MSA
-tags: [MSA] 
+tags: [MSA]
 bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
