@@ -15,11 +15,11 @@ tagline:             'tagline'
 description:         'developer'
 url:                 https://oookawesome.github.io
 rss:                 rss feed url
-baseurl:             '/'
-baseurl_posts_img:   '/assets/images/posts/'
-baseurl_featured_img: '/assets/images/hero/'
-baseurl_featured_thumbnail: '/assets/images/thumbnail/'
-baseurl_javascripts: '/assets/javascripts/'
+baseurl:             ''
+baseurl_posts_img:   'assets/images/posts/'
+baseurl_featured_img: 'assets/images/hero/'
+baseurl_featured_thumbnail: 'assets/images/thumbnail/'
+baseurl_javascripts: 'assets/javascripts/'
 icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
 disqus:              oookawesome # get it on https://disqus.com/admin/
 
