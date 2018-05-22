@@ -12,6 +12,7 @@ tags: [Contract Test, MSA]
 bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
+permalink: /Contract-Test/
 ---
 
 ### 투입!
