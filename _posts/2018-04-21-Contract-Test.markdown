@@ -20,15 +20,15 @@ syntaxHighlighter: no
 ### Contract Test?
 어짜피 처음 테스트 지원을 나간 것이라 모든게 생소했지만, 이전까지 Contract Test는 정말 들어본 적도 없었다. Contract Test란 무엇인가... Contract Test는 서비스 제공자와 사용자간의 계약(Contract)을 검증하는 것이다. 예를 들어 REST API 서비스가 있으면, 이 API의 사용자는 정의된 API 스펙을 바탕으로 POST, GET등의 서비스를 요청하게 된다. 이 때, API 스펙을 바탕으로 서비스 제공자-사용자간의 규약이 형성되는 것이고, Contract Test에서는 이러한 규약이 정상적으로 지켜지는 지를 테스트하는 것이다.
 
-### Functional Test와는 뭐가 다른 가
-얼핏 생각하기엔 기존의 API에 대한 Functional Test와의 차이점이 없는 것 처럼 느껴진다. 어짜피 API 스펙을 바탕으로 API가 정상적으로 동작하는 지를 테스트한다고 보면, 커버하는 영역이 같다는 생각이 들기 때문이다. 실제 커버하는 영역이 같아 보인다. 예를 들면, GET요청 시 "id"라는 key와 value를 돌려주는 API가 있다고 가정했을 때, Functional Test와 Contract Test 둘 다, GET을 호출한 뒤, "id" key에 값이 잘 들어있는 지 확인할 것이기 때문이다.
+### Component Test와는 뭐가 다른 가
+얼핏 생각하기엔 기존의 API에 대한 Component Test와의 차이점이 없는 것 처럼 느껴진다. 어짜피 API 스펙을 바탕으로 API가 정상적으로 동작하는 지를 테스트한다고 보면, 커버하는 영역이 같다는 생각이 들기 때문이다. 실제 커버하는 영역이 같아 보인다. 예를 들면, GET요청 시 "id"라는 key와 value를 돌려주는 API가 있다고 가정했을 때, Component Test와 Contract Test 둘 다, GET을 호출한 뒤, "id" key에 값이 잘 들어있는 지 확인할 것이기 때문이다.
 
 그러나 차이가 있다. Contract는 실제 서비스 소비자가 활용하는 API의 규약이다. 앞선 예에서 만약 API소비자가 id를 활용하지 않으면, 그건 Contract가 아니고 Contract Test 대상이 아니다. 그렇기 때문에 사실 Contract test의 테스트 케이스는 간단하고 필요한 로직만 검증하도록 작성하게된다.
 
-그래도 이상해보인다. Functional Test의 큰 범위안에 속하는 것처럼 보이고 여전히 다 커버되기 때문이다.
+그래도 이상해보인다. Component Test의 큰 범위안에 속하는 것처럼 보이고 여전히 다 커버되기 때문이다.
 
 ### 그럼 이거 왜 할까?
-그럼에도 많은 MSA서적, Article에서 Contract Test의 중요성을 강조하고 꼭 해야 한다고 이야기하는 이유가 뭘까? 그것은 Functional Test와 Contract Test의 목적이 다르기 때문이다. Contract Test의 목적은 사실 서비스 제공자가 내 서비스를 사용하는 사용자에 대한 정보(insight)를 얻기 위한 것이다.
+그럼에도 많은 MSA서적, Article에서 Contract Test의 중요성을 강조하고 꼭 해야 한다고 이야기하는 이유가 뭘까? 그것은 Component Test와 Contract Test의 목적이 다르기 때문이다. Contract Test의 목적은 사실 서비스 제공자가 내 서비스를 사용하는 사용자에 대한 정보(insight)를 얻기 위한 것이다.
 
 이를 이해하기 위해선 MSA와 Consumer Driven Contract(CDC)에 대해 알 필요가 있다. 우선, 서적이나 Contract Test를 말하는 곳에서 이야기하는 가장 큰 대전제는 이것이다.
 
@@ -39,12 +39,12 @@ MSA에서 서비스는 독립적으로 개발된다. 따라서 내 서비스의 
 ### 이상적인 Contract Test
 이러한 전제를 이루기 위해선 당연히 서비스 제공자 측의 개발 변경분에 대한 배포 전에, Contract Test가 수행되어야 하고 테스트가 실패한 경우, 배포가 이루어 지지 않아야 한다. 만약 배포가 되게되면, 빌드는 다 되서 정상적으로 각 서비스들은 잘 떠있는데, UI상에서 실제 기능은 동작을 안하고 Exception을 내거나 하는, 요상한 상황이 나오게된다.
 
-이제 앞선 예에서 Functional Test와 Contract Test의 차이를 알 수 있다. 예를 들어 서비스 제공자 측에서 GET호출 시 "id" key를 변경하여 "uuid"라고 바꿨다면, Functional Test와 Contract Test는 둘 다 깨질 것이다. 다만 Functional Test의 관점에서는 개발 변경사항에 맞춰 테스트를 변경해야 한다. 하지만 Contract Test의 관점에서는 테스트를 수정하는 것이 아니라, 해당 배포를 Holding해야 한다. 그리고 해당 변경이 의도된 것인지 검토해야 하고, 서비스 소비자들과 Serious한 커뮤니케이션과 논의를 해야한다.(Article에서 이렇게 나오더라..) 한마디로 Contract를 깨는 서비스 변경은 매우 신중해야 한다는 이야기이다.
+이제 앞선 예에서 Component Test와 Contract Test의 차이를 알 수 있다. 예를 들어 서비스 제공자 측에서 GET호출 시 "id" key를 변경하여 "uuid"라고 바꿨다면, Component Test와 Contract Test는 둘 다 깨질 것이다. 다만 Component Test의 관점에서는 개발 변경사항에 맞춰 테스트를 변경해야 한다. 하지만 Contract Test의 관점에서는 테스트를 수정하는 것이 아니라, 해당 배포를 Holding해야 한다. 그리고 해당 변경이 의도된 것인지 검토해야 하고, 서비스 소비자들과 Serious한 커뮤니케이션과 논의를 해야한다.(Article에서 이렇게 나오더라..) 한마디로 Contract를 깨는 서비스 변경은 매우 신중해야 한다는 이야기이다.
 
 이것이 약간 이상적인 가정이었다고 생각한다.
 업무를 하고 테스트를 적용하면서 겪었던 어려움과 시행착오의 근원이 이것이 아닐까?
 
-개발중에 서비스API의 URL이나 Schema변경이 자주 일어났고, 서비스 소비자를 고려해서 개발하는 것도 힘들었다. 무엇보다 서비스 개발자 입장에서 Unit Test, Functional Test를 정상적으로 통과해 개발상에 문제가 없음에도, 배포가 막힐 수 있는 상황이 부담이 되었다. 그리고 사실 Contract가 깨져서 배포가 안되는 상황이 되었다고 가정해도, 결국은 그 개발변경이 롤백되는 게 아니라, 배포가 진행되고 소비자가 맞춰서 수정하는 그림이 되는 게 현실이었다.
+개발중에 서비스API의 URL이나 Schema변경이 자주 일어났고, 서비스 소비자를 고려해서 개발하는 것도 힘들었다. 무엇보다 서비스 개발자 입장에서 Unit Test, Component Test를 정상적으로 통과해 개발상에 문제가 없음에도, 배포가 막힐 수 있는 상황이 부담이 되었다. 그리고 사실 Contract가 깨져서 배포가 안되는 상황이 되었다고 가정해도, 결국은 그 개발변경이 롤백되는 게 아니라, 배포가 진행되고 소비자가 맞춰서 수정하는 그림이 되는 게 현실이었다.
 
 ### Spring Cloud Contract
 Contract Test를 위한 Spiking을 통해 나온 툴 후보는 둘이었다. Pact와 Spring Cloud Contract. 우리는 이 중에서 Spring Cloud Contract를 적용하기로 결정했다. 가장 큰 이유는 당시 모든 서비스가 Spring Boot기반으로 개발되었기 때문에 보다 쉽게 활용할 수 있으리란 판단 때문이었다.
