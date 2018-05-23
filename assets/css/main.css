@@ -381,6 +381,7 @@ a:hover {
 
 /* Tables */
 table {
+  margin: auto;
   margin-top: 1.5rem;
   border-spacing: 0px;
   border-collapse: collapse;
