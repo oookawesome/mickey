@@ -4,7 +4,7 @@ markdown:            redcarpet
 highlighter:         pygments
 
 # Permalinks
-permalink:           /:title/
+permalink:           /:title
 
 # Setup
 timezone:            Asia/Seoul # eg. Asia/Kathmandu
