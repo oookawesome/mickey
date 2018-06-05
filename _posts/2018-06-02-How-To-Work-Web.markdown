@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 웹과 브라우저의 기본 개념과 동작 원리 정리
+title: 웹과 브라우저의 기본 개념과 동작 원리
 date: 2018-06-02 17:30:00 +0300
-description: 웹과 브라우저의 기본 개념과 동작 원리 정리
+description: 웹과 브라우저의 기본 개념과 동작 원리
 image :
     feature: website-diagram.jpg
     topPosition: -50px
@@ -12,7 +12,7 @@ bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
 ---
-### 웹과 브라우저의 기본 개념과 동작 원리 정리
+### 웹과 브라우저의 기본 개념과 동작 원리
 #### 시작
 새로운 프로젝트에서 개발업무를 시작하게 되었다. 그에 앞서 웹 기술에 대한 지식과 개념이 너무나 부족하고 정리가 안되있어, 본격적인 기술스택 학습에 앞서 사전 학습을 하게 되었다.
 
