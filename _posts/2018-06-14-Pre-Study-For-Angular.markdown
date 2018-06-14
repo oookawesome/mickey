@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node.js와 Electron, TypeScript 기초
-date: 2018-06-02 17:30:00 +0300
+date: 2018-06-14 17:30:00 +0300
 description: Node.js와 Electron, TypeScript 기초
 image :
     feature: nodejs.png
