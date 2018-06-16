@@ -66,7 +66,7 @@ AngularJS는 자바스크립트 기반의 프론트엔드 웹 애플리케이션
 
 ###### Module
 ![angular-module](../assets/images/posts/angular-module.png){: width="70%" height="70%"}
-- Controller, Filter, Services, Directives 등을 포함하고 있는 애플리케이션의 각기 다른 기능을 각각 나타내는 컨테이너
+- 애플리케이션의 각기 다른 기능을 나타내는 컨테이너(Controller, Filter, Service, Directive 등을 포함)
 
 ###### Service
 - 특정 기능을 담당하는 객체
@@ -74,8 +74,8 @@ AngularJS는 자바스크립트 기반의 프론트엔드 웹 애플리케이션
 - \$를 앞에 붙여서 표기함 (ex. \$compile, \$window)
 
 ###### Expression
-- {{}}로 사용됨 (표현식 내에 자바스크립트 문법을 사용)
-- ex. {{ name }}, {{ 3%5 }}, {{"안녕" + "!"}}
+- {% raw %}{{}}{% endraw %}로 사용됨 (표현식 내에 자바스크립트 문법을 사용)
+- {% raw %}ex. {{ name }}, {{ 3%5 }}, {{"안녕" + "!"}}{% endraw %}
 
 ##### 부트스트랩 (Initialize)
 ![angular-start-up](../assets/images/posts/angular-concepts-startup.png){: width="70%" height="70%"}
