@@ -61,11 +61,11 @@ AngularJS는 자바스크립트 기반의 프론트엔드 웹 애플리케이션
 - 지시어(Directive), 표현식, 필터 등을 포함함
 
 ###### Dependency Injection
-![angular-di](../assets/images/posts/angular-di.png){: width="100%" height="100%"}
+![angular-di](../assets/images/posts/angular-di.png){: width="70%" height="70%"}
 - Injector : Dependency Injection을 담는 컨테이너 역할
 
 ###### Module
-![angular-module](../assets/images/posts/angular-module.png){: width="100%" height="100%"}
+![angular-module](../assets/images/posts/angular-module.png){: width="70%" height="70%"}
 - Controller, Filter, Services, Directives 등을 포함하고 있는 애플리케이션의 각기 다른 기능을 각각 나타내는 컨테이너
 
 ###### Service
@@ -78,7 +78,7 @@ AngularJS는 자바스크립트 기반의 프론트엔드 웹 애플리케이션
 - ex. {{ name }}, {{ 3%5 }}, {{"안녕" + "!"}}
 
 ##### 부트스트랩 (Initialize)
-![angular-start-up](../assets/images/posts/angular-concepts-startup.png){: width="100%" height="100%"}
+![angular-start-up](../assets/images/posts/angular-concepts-startup.png){: width="70%" height="70%"}
 1. Browser가 HTML을 DOM으로 파싱
 2. DOM이 전부 로딩된 상태(DOMContentLoaded)가 되면 자동으로 AngularJS 초기화 시작
 3. 애플리케이션의 root를 나타내는 ng-app directive를 찾는다.
