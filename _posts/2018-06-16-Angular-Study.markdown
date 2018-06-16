@@ -33,9 +33,11 @@ AngularJS는 자바스크립트 기반의 프론트엔드 웹 애플리케이션
 - 데이터를 정의하는 부분으로, 변형되지 않는 자바 스크립트 객체로 구성
 - 일반 MVC구조에서의 DTO 역할
 - HTML속성 : ng-model
+
 ###### View
 - 사용자가 사용하는 환경
 - 템플릿과 모델이 합쳐져 보여지며 DOM구조
+
 ###### Controller
 - 자바스크립트로 이루어진 제어로직
 - 실질적으로 데이터에 대한 처리와 업데이트를 처리. Model에서 데이터를 가져와 서비스작업을 처리하고, 처리 데이터를 다시 View에 갱신
@@ -46,24 +48,31 @@ AngularJS는 자바스크립트 기반의 프론트엔드 웹 애플리케이션
 - 특정 DOM 영역을 위한 모델
 - Model과 View를 감시하고, Controller에 이벤트를 보내는 역할
 - DOM과 가까운 계층구조를 가짐
+
 ###### Directive
 - html을 확장하는 AngularJS의 지시어 (ex. ng-app, ng-model...)
 - 사용자 정의 가능
+
 ###### 양방향 데이터 바인딩
 - Model과 View의 데이터를 실시간으로 연동
+
 ###### Template
 - HTML자체를 템플릿으로 사용
 - 지시어(Directive), 표현식, 필터 등을 포함함
+
 ###### Dependency Injection
 ![angular-di](../assets/images/posts/angular-di.png){: width="100%" height="100%"}
 - Injector : Dependency Injection을 담는 컨테이너 역할
+
 ###### Module
 ![angular-module](../assets/images/posts/angular-module.png){: width="100%" height="100%"}
 - Controller, Filter, Services, Directives 등을 포함하고 있는 애플리케이션의 각기 다른 기능을 각각 나타내는 컨테이너
+
 ###### Service
 - 특정 기능을 담당하는 객체
 - 싱글톤 객체로 하나의 인스턴스만 존재
 - \$를 앞에 붙여서 표기함 (ex. \$compile, \$window)
+
 ###### Expression
 - {{}}로 사용됨 (표현식 내에 자바스크립트 문법을 사용)
 - ex. {{ name }}, {{ 3%5 }}, {{"안녕" + "!"}}
