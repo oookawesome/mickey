@@ -43,10 +43,10 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
   - 내부에 +,-,=== 같은 연산자 사용가능
   - 컴포넌트 내부의 변수와 함수를 참조하는 것이 가능
   - 타입 스크립트 사용가능
-- 파이프(|) 사용
+- 파이프(\|) 사용
   - 파이프는 데이터의 표현 형식을 수정하는 연산자
   - 내장 파이프를 제공함 (json, date...)
-  - ex. {{expression | json}}
+  - ex. {{expression \| json}}
   - @Pipe 이용해 사용자정의 파이프 구현 가능
 
 #### 6장 데이터 바인딩
@@ -61,15 +61,15 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
   ```
   - 클래스 바인딩 : CSS 스타일 태그를 HTML 요소에 바인딩할 때 사용. 표현식의 결과가 true인 경우에 클래스가 할당됨  
   ```
-  <div [class.nameHere]="true"></div>
+  <div [class.nameHere]="true">
   ```
   - 스타일 바인딩 : HTML 요소에 인라인 스타일을 지정할 때 사용. 클래스 바인딩과 유사하지만, 접두어로 style이 붙음  
   ```
-  <p [style.styleProperty] = "assignment"></p>
+  <p [style.styleProperty] = "assignment">
   ```
   - 이벤트 바인딩 : 클릭, 키 입력, 마우스 이동과 같은 사용자 입력을 처리할 때 사용. HTML 이벤트 속성에서 on 접두사가 제거되고, 이벤트를 괄호(())로 감쌈  
   ```
-  <button (click)="myFunction()">button</button>
+  <button (click)="myFunction()">
   ```
 - 양방향 바인딩 : ngModel을 사용해 변경사항을 감지하고, 값을 업데이트 함  
 ```
@@ -81,11 +81,11 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
 - 앵귤러 내장 디렉티브
   - ngFor : iterable객체 내의 각 항목에 대한 사본 생성  
   ```
-  <div *ngFor="let person of people"></div>
+  <div *ngFor="let person of people">
   ```
   - ngIf : 해당 값이 true인 경우에만 DOM에 추가, false이면 DOM에서 제거됨  
   ```
-  <div *ngIf="person"></div>
+  <div *ngIf="person">
   ```
   - ngSwitch/ngSwitchCase/ngSwitchDefault : switch문을 구성함. 값이 아무것도 일치하지 않으면 DOM 생성하지 않음  
   ```
@@ -108,12 +108,12 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
 
 - 사용자 정의 이벤트를 구성할 수 있고, 해당 이벤트를 부모 컴포넌트로 내보낼 수 있음
   - @Output 애노테이션과 EventEmitter 클래스를 사용
-  ```
+  ~~~~
   @Output() name: EventEmitter<any> = new EventEmitter();
   myFunction() {
     this.name.emit(args);
   }
-  ```
+  ~~~~
   - 내보내진 이벤트는 내장 이벤트와 유사하게 이벤트를 처리
   ```
   <div (name)="handlerMethod(event)">
