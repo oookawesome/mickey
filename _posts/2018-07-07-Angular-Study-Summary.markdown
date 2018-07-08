@@ -67,15 +67,11 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
   {% endraw %}
   - 스타일 바인딩 : HTML 요소에 인라인 스타일을 지정할 때 사용. 클래스 바인딩과 유사하지만, 접두어로 style이 붙음  
   ~~~~
-  {% raw %}
   <p [style.styleProperty] = "assignment">
-  {% endraw %}
   ~~~~
   - 이벤트 바인딩 : 클릭, 키 입력, 마우스 이동과 같은 사용자 입력을 처리할 때 사용. HTML 이벤트 속성에서 on 접두사가 제거되고, 이벤트를 괄호(())로 감쌈  
   ~~~~
-  {% raw %}
   <button (click)="myFunction()">
-  {% endraw %}
   ~~~~
 - 양방향 바인딩 : ngModel을 사용해 변경사항을 감지하고, 값을 업데이트 함  
 ~~~~
@@ -87,24 +83,18 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
 - 앵귤러 내장 디렉티브
   - ngFor : iterable객체 내의 각 항목에 대한 사본 생성  
   ~~~~
-  {% raw %}
   <div *ngFor="let person of people">
-  {% endraw %}
   ~~~~
   - ngIf : 해당 값이 true인 경우에만 DOM에 추가, false이면 DOM에서 제거됨  
   ~~~~
-  {% raw %}
   <div *ngIf="person">
-  {% endraw %}
   ~~~~
   - ngSwitch/ngSwitchCase/ngSwitchDefault : switch문을 구성함. 값이 아무것도 일치하지 않으면 DOM 생성하지 않음  
   ~~~~
-  {% raw %}
   <div [ngSwitch]="timeOfDay">
     <span [ngSwitchCase]="'morning'">Morning</span>
     <span [ngSwitchCase]="'afternoon'">Afternoon</span>
     <span [ngSwitchDefault]="'daytime'">Evening</span>
-    {% endraw %}
   ~~~~
 
 #### 8장 사용자 정의 디렉티브
@@ -128,9 +118,7 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
   ~~~~
   - 내보내진 이벤트는 내장 이벤트와 유사하게 이벤트를 처리
   ~~~~
-  {% raw %}
   <div (name)="handlerMethod(event)">
-  {% endraw %}
   ~~~~
 - Observable 활용
 
@@ -144,7 +132,6 @@ export class CustomService {}
 ~~~~
 - 사용자 정의 서비스를 가져다 쓰는 컴포넌트의 provider 부분에 해당 서비스를 추가
 ~~~~
-{% raw %}
 import { CustomService } from './path'
 
 @Component({
@@ -152,13 +139,10 @@ import { CustomService } from './path'
   ..
   provider: [ CustomService ]
   })
-  {% endraw %}
 ~~~~
 - 사용자 정의 서비스를 사용하기 위해 해당 서비스의 인스턴스를 생성
 ~~~~
-{% raw %}
 constructor(
   private myService: CustomService
   ){}
-    {% endraw %}
 ~~~~
