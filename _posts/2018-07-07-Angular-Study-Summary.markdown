@@ -60,11 +60,11 @@ Angular학습을 위해 "러닝! Angular 4" 책을 읽었다. 해당 내용을 �
   <img [src]="myValue">
   ~~~~
   - 클래스 바인딩 : CSS 스타일 태그를 HTML 요소에 바인딩할 때 사용. 표현식의 결과가 true인 경우에 클래스가 할당됨  
-  ~~~~
   {% raw %}
-  <div [class.nameHere]="true">
-  {% endraw %}
   ~~~~
+  <div [class.nameHere]="true">
+  ~~~~
+  {% endraw %}
   - 스타일 바인딩 : HTML 요소에 인라인 스타일을 지정할 때 사용. 클래스 바인딩과 유사하지만, 접두어로 style이 붙음  
   ~~~~
   {% raw %}
