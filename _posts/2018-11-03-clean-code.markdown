@@ -4,7 +4,7 @@ title: 클린 코드 책을 읽고
 date: 2018-11-03 17:30:00 +0300
 description: 클린 코드 애자일 소프트웨어 장인 정신 책에 대한 정리
 image :
-    feature: clean-code-book.jpg
+    feature: clean-coder.jpg
     topPosition: -50px
 categories: clean code
 tags: [Clean Code]
