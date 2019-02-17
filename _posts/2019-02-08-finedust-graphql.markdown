@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GraphQL과 Apollo를 이용한 미세먼지 서버 개발
-date: 2018-02-08 14:30:00 +0300
+date: 2019-02-08 14:30:00 +0300
 description: GraphQL의 이해와 Apollo를 이용한 GraphQL 미세먼지 서버 개발기
 image :
     feature: graphql.png
