@@ -165,7 +165,7 @@ Apollo의 여러 기능을 활용해본 것은 아니고, 튜토리얼을 보면
   ```
 
 #### 마치며
-GraphQL 서버를 만들어 보면서 개념이나 구조를 알아볼 수 있어 좋았다. Apollo를 이용해 쉽게 기존 REST API에 연결할 수 있어 편리했다. 미세먼지 GraphQL API서버의 전체소스는 [깃허브](https://github.com/oookawesome/finedust-graphql-api)에 있다.
+GraphQL 서버를 만들어 보면서 개념이나 구조를 알아볼 수 있어 좋았다. Apollo를 이용해 쉽게 기존 REST API에 연결할 수 있어 편리했다. 미세먼지 GraphQL API서버의 전체소스는 [_깃허브_](https://github.com/oookawesome/finedust-graphql-api)에 있다.
 
 처음 관심을 가졌을 때는 REST의 단점을 완전히 상쇄시키고 대체하는 것이 가능할까에 대해 궁금했는데, 여러 포스트를 보니 둘 사이의 장단점이 달라, 완전한 대체제라고 보기는 어려운 것 같았다. 언급된 몇 가지의 GraphQL의 단점으로는,
 - 파일 전송 처리가 복잡하다.
