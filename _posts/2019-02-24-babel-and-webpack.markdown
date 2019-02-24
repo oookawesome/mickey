@@ -24,11 +24,11 @@ syntaxHighlighter: no
 3. `package.json 설정`
 
 #### 2. npm install
-1. `$npm install babel --save-dev`
+1. `$npm install @babel/core --save-dev`
 2. `$npm install webpack --save-dev`
 
 #### 3. babel 설정
-1. `$npm install @babel/core @babel/preset-env --save-dev`
+1. `$npm install @babel/preset-env --save-dev`
 2. `프로젝트 루트에 .babelrc 파일 생성`
 3. `.babelrc 파일에 해당 설정 추가`
     ```
@@ -47,8 +47,8 @@ syntaxHighlighter: no
     ```
 
 #### 4. Webpack 설정
-1. `$npm install webpack webpack-cli --save-dev`
-2. `번들링 시 babel을 사용하기 위해 babel-loader 설치`
+1. `$npm install webpack-cli --save-dev`
+2. `번들링 시 babel을 사용하기 위해 babel-loader 설치 : `
     `$npm install babel-loader --save-dev`
 3. `프로젝트 루트에 webpack.config.js 파일 생성`
 4. `webpack.config.js에 설정 추가`
